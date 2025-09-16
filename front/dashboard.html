@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard | JWT Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Panel de control</h2>
+      <span id="roleBadge" class="badge">Rol</span>
+    </div>
+
+    <div class="card" id="content">
+      <p>Cargando...</p>
+    </div>
+
+
+    <div class="card" style="margin-top:16px;">
+  <h3>Token JWT actual</h3>
+  <pre id="tokenBox" style="white-space: pre-wrap; word-wrap: break-word; background:#f5f5f5; padding:12px; border-radius:8px; max-height:200px; overflow:auto;"></pre>
+</div>
+
+
+    <div style="margin-top:14px;">
+      <button id="logoutBtn">Cerrar sesión</button>
+    </div>
+  </div>
+
+  <script>
+    window.API_URL = 'http://localhost:3001';
+  </script>
+  <script src="./js/dashboard.js"></script>
+</body>
+</html>
